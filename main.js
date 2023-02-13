@@ -40,7 +40,7 @@ function exclaim(str) {
   }
   return result;
 }
-console.log(exclaim("What are you doing? Are you a fool?"));
+console.log(exclaim("What are you doing. Are you a fool?"));
 
 function truncate(str) {
   let result = "";
@@ -102,4 +102,19 @@ function onlyVowels(str) {
   return result;
 }
 
-console.log(onlyVowels("Terrance"))
+console.log(onlyVowels("Terrence"))
+console.log(onlyVowels("Code Immersives"))
+
+function crazyCase(str) {
+  let result = '';
+  for (let i = 0; i < str.length; i++) {
+    if (i % 2 === 0) {
+      result += str[i].toLowerCase();
+    } else {
+      result += str[i].toUpperCase();
+    }
+  }
+  return result;
+}
+
+console.log(crazyCase("Terrence"))
